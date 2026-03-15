@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# Government Scheme Eligibility Checker
 
-## Project info
+A modern, responsive web application designed to help citizens find and manage government schemes and exams based on their eligibility.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **Personalized Recommendations**: Find schemes and exams tailored to your age, gender, category, and income.
+- **Admin Dashboard**: Comprehensive management interface for schemes, exams, and user statistics.
+- **Dynamic Eligibility Filtering**: Built-in logic to cross-reference user profiles with scheme requirements.
+- **"Show All" Toggle**: Explore all available opportunities even if not currently eligible.
+- **Authentication & Roles**: Secure login with automatic admin redirection.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: Vite, React, TypeScript, Tailwind CSS, shadcn/ui.
+- **Backend & Auth**: Supabase.
+- **Icons**: Lucide React.
+- **Styling**: Modern dark-themed design with glassmorphism effects.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- A Supabase account and project
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Local Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/MouliRitchie/Govt-scheme-eligibility-checker.git
+   cd Govt-scheme-eligibility-checker
+   ```
 
-Follow these steps:
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Environment variables**:
+   Create a `.env` file in the root directory and add your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Run the development server**:
+   ```sh
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Database Setup
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+To populate the database with schemes and exams:
 
-**Edit a file directly in GitHub**
+1. Go to your [Supabase SQL Editor](https://supabase.com/dashboard/project/htvhahlwfkevrmdkyrbf/sql).
+2. Create the necessary tables (`schemes`, `exams`, `profiles`, `user_roles`).
+3. Run the provided seed script found in `supabase/seed.sql` (if available) or copy the contents of the generated `comprehensive_seed.sql`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Simply publish via Lovable or host on platforms like Vercel/Netlify connected to your GitHub repository.
