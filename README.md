@@ -2,6 +2,21 @@
 
 A modern, responsive web application designed to help citizens find and manage government schemes and exams based on their eligibility.
 
+## Visual Preview
+
+### Landing & Authentication
+| Landing Page | Login | Register |
+| :---: | :---: | :---: |
+| ![Landing Page](./screenshots/landing_page.png) | ![Login](./screenshots/login_page.png) | ![Register](./screenshots/register_page.png) |
+
+### User Dashboard
+![User Dashboard](./screenshots/user_dashboard.png)
+
+### Admin Panel
+| Admin Dashboard | Manage Schemes |
+| :---: | :---: |
+| ![Admin Dashboard](./screenshots/admin_dashboard.png) | ![Manage Schemes](./screenshots/admin_schemes.png) |
+
 ## Features
 
 - **Personalized Recommendations**: Find schemes and exams tailored to your age, gender, category, and income.
